@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fffdf9;
+  --foreground: #191919;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top left, rgba(57, 11, 118, 0.10), transparent 32rem), #fffdf9;
+  color: var(--foreground);
+}
+
+::selection {
+  background: #390b76;
+  color: white;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2;
+}
+
+.card-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-sheen:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.35), rgba(255,255,255,0));
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.prose-rediserche h2 {
+  @apply mt-10 text-2xl font-bold text-ink;
+}
+
+.prose-rediserche p {
+  @apply mt-4 leading-8 text-muted;
+}
+
+.prose-rediserche ul {
+  @apply mt-4 space-y-2 text-muted;
+}
+
+.prose-rediserche li {
+  @apply leading-7;
+}
