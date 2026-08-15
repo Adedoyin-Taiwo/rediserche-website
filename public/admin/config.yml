@@ -2,7 +2,8 @@ backend:
   name: github
   repo: Adedoyin-Taiwo/rediserche-website
   branch: main
-  base_url: https://your-oauth-server.example.com
+  base_url: https://rediserche-website.vercel.app
+  auth_endpoint: api/auth
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
